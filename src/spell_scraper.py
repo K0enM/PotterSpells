@@ -4,7 +4,7 @@ import json
 import os
 
 
-def scrape_spells():
+def scrape_spells(path):
     url = "https://www.pojo.com/harry-potter-spell-list/"
     req = requests.get(url)
     response = req.text
@@ -13,7 +13,7 @@ def scrape_spells():
     table = soup.findChild("table")
     rows = table.findChildren("tr")
 
-    spells_file = open(os.path.join(os.curdir, "../data/spells.json"), "w")
+    spells_file = open(os.path.join(os.curdir, path), "w")
     data = {"spells": []}
     for row in rows[2:]:
         cells = row.findChildren('td')
@@ -23,5 +23,3 @@ def scrape_spells():
     json.dump(data, spells_file, indent=4)
     return req.status_code
 
-
-scrape_spells()
