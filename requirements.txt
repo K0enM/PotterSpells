@@ -4,6 +4,7 @@ beautifulsoup4==4.9.0
 certifi==2020.4.5.1
 chardet==3.0.4
 colorama==0.4.3
+comtypes==1.1.7
 idna==2.9
 importlib-metadata==1.6.0
 more-itertools==8.2.0
@@ -11,7 +12,10 @@ packaging==20.3
 pluggy==0.13.1
 py==1.8.1
 pyparsing==2.4.7
+pypiwin32==223
 pytest==5.4.1
+pyttsx3==2.87
+pywin32==227
 requests==2.23.0
 six==1.14.0
 soupsieve==2.0
