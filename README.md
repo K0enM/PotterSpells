@@ -1,4 +1,4 @@
-https://travis-ci.org/K0enM/PotterSpells.svg?branch=master
+![Travis-CI](https://travis-ci.org/K0enM/PotterSpells.svg?branch=master)
 
 # Potter Spells
 
